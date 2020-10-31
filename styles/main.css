@@ -1,0 +1,111 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background: #476AF5;
+  color: #FFF;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 5%;
+}
+
+header {
+  font-family: 'Noto Serif', serif;
+  background: #3c4043;
+  margin-bottom: 1em;
+  padding: 1em;
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: 'Noto Serif', serif;
+  margin: 0;
+  padding: 1em;
+  text-align: center;
+}
+
+
+#info1, #info2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+}
+
+#chart1Article, #chart2Article {
+  background: #203ba8;
+  flex: 1 0 0;
+  margin-left: 2em;
+  padding: 1.5em;
+}
+
+#chart1, #chart2 {
+  flex: 2 0 0;
+  max-width: 100%
+}
+
+
+footer {
+  background: #203ba8;
+  font-family: 'Noto Serif', serif;
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Links */
+a:link {
+  color: #f5c947;
+}
+
+a:visited {
+  color: #ce0033;
+}
+
+a:hover {
+  color: #a8820f;
+}
+
+a:active {
+  color: #58ce31;
+}
+/* End Links */
+
+/* Is user screen Smaller then desktop? */
+@media screen and (max-width:1024px) {
+  header {
+    padding: 0.5em;
+    font-size: 70%;
+  }
+
+  header p {
+    font-size: 1.5em;
+  }
+
+  #info1, #info2 {
+    flex-flow: column wrap;
+    margin: auto;
+  }
+  #chart1Article, #chart2Article {
+    align-items: center;
+    margin: 5%;
+    padding: 5%;
+    max-width: 100%
+  }
+
+  #chart1, #chart2 {
+    width: 100%;
+    margin: 0 auto;
+    flex: initial
+
+  }
+}
